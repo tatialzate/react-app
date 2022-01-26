@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 53%;
+    margin: 50% auto;
+    height: 30vh;
+    border-radius: 5%;
+    background-color: white;
+    color: var(--color-primary);
+    padding: 15px;
+}
+
+.form label{
+    font-size: 2.0rem;
+}
+
+.form textarea{
+    height: 7rem;
+    padding: 1rem;
+}
+
+.form__container-buttons{
+    display: flex;
+    width:  100%;
+}
+
+.form__button{
+    width: 55%;
+    padding: 0.5rem 1.0rem;
+    margin: 0 1rem;
+    font-family: 'Slabo 27px', serif;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.form__button--cancel {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 0.2rem solid var(--color-light-pink);
+}
+
+.form__button--add {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 0.2rem solid var(--color-primary);
+}

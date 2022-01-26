@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-primary: #ee9ca7;
+  --color-light-pink:#ffdde1;
+  --color-secondary: #ffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  background: -webkit-linear-gradient(to right, var(--color-light-pink), var(--color-primary));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--color-light-pink), var(--color-primary)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--color-secondary);
+  font-size: 62.5%;
+  font-family: 'Slabo 27px', serif;
+
+}
+
+section {
+  width: 70%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.search {
+  background-color: var(--color-secondary);
+  border-radius: 5rem;
+  border: 0.2rem solid var(--color-secondary);
+  height: 4rem;
+  margin: 3rem auto;
+  outline: none;
+  padding: 1rem;
+  width: 70%;
+}
+
+.list-container {
+  width: 53%;
+}
+
+li {
+  align-items: center;
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  height: 5.5rem;
+  list-style: none;
+  margin: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.btnAddTodo {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.icon--delete {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.3rem;
+  cursor: pointer;
+}
+
+.icon--check {
+  width: 3.4rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.item--completed {
+  text-decoration: line-through;
 }

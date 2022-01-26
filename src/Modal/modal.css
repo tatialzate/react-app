@@ -1,0 +1,7 @@
+.modal {
+    position: absolute;
+    background: rgba(60, 60, 60, 0.4);
+    top: 0;
+    right: 0;
+    left: 0;
+}

@@ -35,6 +35,10 @@ h1 {
   margin-top: 4rem;
 }
 
+.header--loading {
+  opacity: 25%;
+}
+
 .search {
   background-color: var(--color-secondary);
   border-radius: 5rem;
@@ -43,7 +47,11 @@ h1 {
   margin: 3rem auto;
   outline: none;
   padding: 1rem;
-  width: 70%;
+  width: 35%;
+}
+
+.search:disabled{
+  opacity: 25%;
 }
 
 .list-container {
@@ -73,6 +81,11 @@ li {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   cursor: pointer;
+  margin: 3rem;
+}
+
+.btnAddTodo--loading {
+  display: none;
 }
 
 .icon--delete {
@@ -90,4 +103,36 @@ li {
 
 .item--completed {
   text-decoration: line-through;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(60, 60, 60, 0.4);
+  top: 0;
+  right: 0;
+  left: 0; 
+  bottom: 0;
+}
+
+.modal__content {
+  width: 35rem;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #fff;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem;
+  color: var(--color-primary);
+}
+
+.modal__content p {
+  margin: 2rem 0;
 }

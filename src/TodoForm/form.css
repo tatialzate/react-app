@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 53%;
-    margin: 50% auto;
-    height: 30vh;
+    width: 35rem;
+    height: 25rem;
     border-radius: 5%;
     background-color: white;
     color: var(--color-primary);
